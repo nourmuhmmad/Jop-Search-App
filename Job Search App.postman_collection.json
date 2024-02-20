@@ -1,0 +1,324 @@
+{
+	"info": {
+		"_postman_id": "e1e93979-2792-4eb1-a70a-bb391a6f8333",
+		"name": "Job Search App",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "31336405"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "SignUp",
+					"request": {
+						"method": "POST",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "SignIn",
+					"request": {
+						"method": "POST",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Change Password",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NWM1ZDQ4YzE4NzdlYzk0YmE2YjkzN2IiLCJyb2xlIjoidXNlciIsImlhdCI6MTcwNzQ2Njc1MH0.rBlY0127UQl3dAb3jGXibcrsoYOCSEHtUx432TOOmT4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"currentPassword\":\"123\",\r\n    \"newPassword\":\"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/user"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Account",
+					"request": {
+						"method": "DELETE",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Update Account",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NWM1ZmFkYjk0NGNhYTE0ODcyYTJhYjUiLCJyb2xlIjoidXNlciIsImlhdCI6MTcwNzQ3OTY2OX0.meMPzvqHhydf9GLgel-sVfiP67Jzn4p1fnYgC8WPWck",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\":\"hesham\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/user/updateAccount"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Account Data",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Get Another Account Data",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Get Accounts By Recovery Email",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Job",
+			"item": [
+				{
+					"name": "Add Job",
+					"request": {
+						"method": "POST",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Jobs With Company Data",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:3000/job"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Job",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NWM2NWZhMmIxZTNkYTBhMjY3M2FlN2QiLCJyb2xlIjoiaHIiLCJpYXQiOjE3MDc1ODgzNjR9.G4EWXivl5vLUPh0oXu0ggvH80E1BoY5avrGLjDma7y0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"jobTitle\": \"hhhh\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/job/65c7bb522508291235a0da8e"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Job",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NWM2NWZhMmIxZTNkYTBhMjY3M2FlN2QiLCJyb2xlIjoiaHIiLCJpYXQiOjE3MDc1ODgzNjR9.G4EWXivl5vLUPh0oXu0ggvH80E1BoY5avrGLjDma7y0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"jobTitle\": \"hhhh\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/job/65c7bb522508291235a0da8e"
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Jobs Of Company",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Jobs With Filters",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Application",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Company",
+			"item": [
+				{
+					"name": "Add Company",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NWM2NWZhMmIxZTNkYTBhMjY3M2FlN2QiLCJyb2xlIjoiaHIiLCJpYXQiOjE3MDc0OTk0NDJ9.OjtVhaXScb4WU3PF1ar-kBseNU4vBhXT5U4EPhcgJLY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"companyName\":\"alrayaa\",\r\n    \"description\":\"travel company\",\r\n    \"industry\":\"trvel\",\r\n    \"address\":\"kuwait\",\r\n    \"numOfEmployees\":\"20\",\r\n    \"email\":\"ahlray22.acom\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/company"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Company",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NWM2NWZhMmIxZTNkYTBhMjY3M2FlN2QiLCJyb2xlIjoiaHIiLCJpYXQiOjE3MDc0OTk0NDJ9.OjtVhaXScb4WU3PF1ar-kBseNU4vBhXT5U4EPhcgJLY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"companyName\":\"alam alraya\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/company/65c66939280c6f1eb4d73710"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Company Data",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NWM2NWZhMmIxZTNkYTBhMjY3M2FlN2QiLCJyb2xlIjoiaHIiLCJpYXQiOjE3MDc0OTk0NDJ9.OjtVhaXScb4WU3PF1ar-kBseNU4vBhXT5U4EPhcgJLY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/company/65c66e0937459cfcde40c5bd",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"company",
+								"65c66e0937459cfcde40c5bd"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NWM2NWZhMmIxZTNkYTBhMjY3M2FlN2QiLCJyb2xlIjoiaHIiLCJpYXQiOjE3MDc0OTk0NDJ9.OjtVhaXScb4WU3PF1ar-kBseNU4vBhXT5U4EPhcgJLY",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Company Data",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Get Company By Name",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Aplications of Job",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
