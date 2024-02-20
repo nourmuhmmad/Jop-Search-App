@@ -30,24 +30,6 @@ const addAppVal = joi.object({
     jobId: joi.string().hex().length(24),
     userId: joi.string().hex().length(24),
     userSoftSkills:joi.string().min(2).max(300),
-
-    // resume:String,
-    /**  file: joi
-    .object({
-      fieldname: joi.string().required(),
-      originalname: joi.string().required(),
-      encoding: joi.string().required(),
-      size: joi.number().max(5242880).required(),
-      mimetype: joi
-        .string()
-        .valid("image/jpeg", "image/png", "image.jpg")
-        .required(),
-      destination: joi.string().required(),
-      filename: joi.string().required(),
-      path: joi.string().required(),
-    })
-    .required(), */
-
 });
 
 export {
